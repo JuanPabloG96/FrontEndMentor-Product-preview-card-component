@@ -95,6 +95,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
+    cursor: pointer;
     color: var(--White);
     background-color: var(--Dark-cyan);
     font-weight: 600;
