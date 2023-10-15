@@ -7,16 +7,18 @@
     --Cream: hsl(30, 38%, 92%);
 
     /* Neutral */
-    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Very-dark-blue: hsla(154.054, 41%, 18%, 1);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -25,7 +27,7 @@ body{
     background-color: var(--Cream);
 }
 
-.card{
+.card {
     width: 90%;
     max-width: 340px;
     border-radius: 15px;
@@ -34,84 +36,98 @@ body{
     flex-direction: column;
     background-color: var(--White);
 }
-.image-container{
+
+.image-container {
     width: 100%;
     height: 250px;
-    background-color: rebeccapurple;
     background-image: url(images/image-product-mobile.jpg);
     background-size: cover;
     background-position: center;
 }
-.text-container{
+
+.text-container {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     flex: 1;
 }
-.product{
+
+.product {
     color: var(--Dark-grayish-blue);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 300;
 }
-.product-title{
+
+.product-title {
     font-family: 'Fraunces', sans-serif;
     font-size: 1.8rem;
     color: var(--Very-dark-blue);
 }
-.product-description{
+
+.product-description {
     color: var(--Dark-grayish-blue);
     line-height: 1.5;
 }
-.price-container{
+
+.price-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
-.actual-price{
+
+.actual-price {
     color: var(--Dark-cyan);
     font-family: 'Fraunces', sans-serif;
     font-size: 2rem;
 }
-.old-price{
+
+.old-price {
     color: var(--Dark-grayish-blue);
     text-decoration: line-through;
 }
-.btn{
+
+.btn {
     width: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
     gap: 15px;
+    color: var(--White);
     background-color: var(--Dark-cyan);
     font-weight: 600;
+    border: none;
     border-radius: 10px;
 }
-.btn a{
-    color: var(--White);
-    text-decoration: none;
+
+.btn:active {
+    background-color: var(--Very-dark-blue);
 }
 
-@media (min-width: 768px){
-    .card{
+@media (min-width: 768px) {
+    .card {
         flex-direction: row;
         max-width: 650px;
     }
-    .image-container{
+
+    .image-container {
         width: 50%;
         height: auto;
         background-image: url(images/image-product-desktop.jpg);
     }
-    .text-container{
+
+    .text-container {
         padding: 30px;
         gap: 20px;
     }
-    .product-title{
+
+    .product-title {
         font-size: 2.4rem;
     }
-    .product-description{
+
+    .product-description {
         font-size: 1rem;
     }
 }
